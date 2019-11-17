@@ -55,7 +55,7 @@ type Project struct {
 // GetAllProjects is called within our projects query
 func (d *Db) GetAllProjects() []Project {
 	// Prepare query
-	stmt, err := d.Prepare("SELECT * FROM public.projects")
+	stmt, err := d.Prepare("SELECT * FROM projects")
 	if err != nil {
 		fmt.Println("GetAllProjects Preperation Err: ", err)
 	}
