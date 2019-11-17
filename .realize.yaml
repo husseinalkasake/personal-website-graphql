@@ -1,0 +1,31 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+schema:
+- name: personal-website-graphql
+  path: C:\Users\husse\Documents\go\src\personal-website-graphql
+  commands:
+    clean:
+      status: true
+    fmt:
+      status: true
+    test:
+      status: true
+    generate:
+      status: true
+    install:
+      status: true
+    build:
+      status: true
+    run:
+      status: true
+  watcher:
+    extensions:
+    - go
+    paths:
+    - /
+    ignored_paths:
+    - .git
+    - .realize
+    - vendor
