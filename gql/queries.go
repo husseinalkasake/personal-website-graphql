@@ -22,8 +22,19 @@ func NewRoot(db *postgres.Db) *Root {
 			graphql.ObjectConfig{
 				Name: "Query",
 				Fields: graphql.Fields{
+					"about": &graphql.Field{
+						Type:    graphql.NewList(About),
+						Resolve: resolver.AboutResolver,
+					},
+					"education": &graphql.Field{
+						Type:    graphql.NewList(Education),
+						Resolve: resolver.EducationResolver,
+					},
+					"experience": &graphql.Field{
+						Type:    graphql.NewList(Experience),
+						Resolve: resolver.ExperienceResolver,
+					},
 					"projects": &graphql.Field{
-						// Slice of Project type
 						Type:    graphql.NewList(Project),
 						Resolve: resolver.ProjectResolver,
 					},
