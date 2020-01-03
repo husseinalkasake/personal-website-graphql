@@ -29,13 +29,11 @@ func New(connString string) (*Db, error) {
 	return &Db{db}, nil
 }
 
-// "jwL8X;{sbJ~MB,^P"
-
 // ConnString returns a connection string to database
 func ConnString(host string, port int, user string, dbName string) string {
 	return fmt.Sprintf(
 		"host=%s port=%d user=%s dbname=%s password=%s sslmode=disable",
-		host, port, user, dbName, "HailToTheThief@20XX")
+		host, port, user, dbName, "Toronto1")
 }
 
 // About struct
