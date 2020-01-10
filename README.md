@@ -1,1 +1,5 @@
-personal-website-graphql
+A Go GraphQL Backend created for my personal website http://kasake.com
+
+This project was inspired by my recent experience of working with GraphQL. At one of my recent positions, I worked extensively with GraphQL and Apollo Client with both React and Vue applications and was really taken by its possibilites as an alternative to traditional REST APIs. While for a project like this where most of the data is fetched together, the benefits of only passing desired data is not fully appreciated, but the benefits of built in schema documentation and specific errors are still valuable. This was also an opportunity to work with Go which is a language I've been interested in and wanting to get famailiar with. For the database, both MySQL and PostgreSQL seemed like viable options but I was generally more familiar with Postgres.
+
+In terms of packages, the most significant one is https://github.com/graphql-go/graphql which provides a simple implementation of GraphQL for Go, providing a straightforward template to declare needed schemas, resolvers and queries for all data objects. Other important ones are https://github.com/go-chi/chi as a simple and lightweight router for HTTP services as well as https://golang.org/pkg/database/sql/ and https://github.com/lib/pq to handle the database. This project is in the process of being deployed.
